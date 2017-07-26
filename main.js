@@ -65,9 +65,9 @@ $(document).ready(function () {
         $(".html").html("<h3>You miss 100% of the shots you don’t take. –Wayne Gretzky</h3>");
     });
 
-    // .attr functionality DO THIS
+    // .attr functionality
     $(".attr button").click(function () {
-        $(".attr p").attr("<strong> –Albert Einstein</strong>");
+        $(".attr input").attr("value", "Rachel Green");
     });
 
     // .val functionality
@@ -80,9 +80,14 @@ $(document).ready(function () {
         $(".text span").text("an awful");
     });
 
-    // .data functionality DO THIS
+    // .data functionality 
     $(".data button").click(function () {
-        $(".data span").data("an awful");
+        $("div.data").data("test", {
+            first: 100,
+            last: 1
+        });
+        $(".data span:first").text($("div.data").data("test").first);
+        $(".data span:last").text($("div.data").data("test").last);
     });
 
 });
