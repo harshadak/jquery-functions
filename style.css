@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+body {
+    margin: 0 auto;
+    padding: 20px;
+    width: 900px;
+}
+button {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+}
+div {
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+    border-bottom: 2px solid #000;
+}
+div.show p {
+    display: none;
+}
+div.slide-down img {
+    width: 250px;
+    height: 80px;
+    display: none;
+}
+div.slide-up img {
+    width: 150px;
+    height: 150px;
+}
+div.fade-in p {
+    display: none;
+}
+div.fade-out img {
+    width: 250px;
+    height: 130px;
+}
+.blue {
+    color: #fff;
+    background-color: cornflowerblue;
+}
+b,
+i {
+    background-color: coral;
+    color: #fff;
+}
